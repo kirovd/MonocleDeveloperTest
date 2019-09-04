@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Monocle | Developer | Test</title>
+        <link rel="shortcut icon" href="//static.monocle.com/img/favicon.ico" type="image/png"> 
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="fonts/HelveticaNeueBoldCondensed.ttf" type="text/css">
+        <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+        <link rel="stylesheet" href="fonts/fonts.html" type="text/css">
+        
+        
+    </head>
+    <body>
+        <div class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                   <img src="images/2019-08-31_1254.png" class="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid"><!-- start -->
+            <div class="col-sm-9">
+                <div class="jumbotronn"> <br>
+                <h3 class="h3">INGREDIENTS</h3><br>
+                <p class="p">1 tbsp olive or repeseede oil <br>1 onion , finely chopped <br>3 garlci cloves , sliced <br>1 tsp smoked paprika <br>½ tsp cumin <br>1 tbsp dried thyme <br>3 medium carrots , sliced (about 120g) <br>2 medium sticks celery , finely sliced <br>1 red pepper , chopped <br>1 yellow pepper , chopped <br>2 x 400g tins tomatoes or peeled cherry tomatoes 250ml vegetable stock cube (we used 1 Knorr vegetable stock pot) <br>2 courgettes , sliced thickly (about 300g) <br>2 springs fresh thyme</p>
+                </div>
+            </div>
+            
+            <div class="col-sm-3">
+                <img src="images/veg-casserole.jpg" style="width: 100%">
+                <div class="content">
+                <p>Vegetarian casserole</p>
+              </div>
+            </div>
+            
+           <div class="col-sm-6">
+                <div class="jumbotronn"> <br>
+                <h3 class="h3">METHOD</h3><br>
+<!--
+                <ol><li>Heat the oil in a large, heavy-based pan.</li>
+                    <b><li>Add the onions and cook gently for 5 - 10 mins until softened.</li></b>
+                    <li>Add garlic, spices, dried thyme, carrots, celery and peppers and cook for 5 minutes.</li>
+                    <b><li>Add the tomatoes, stock, courgettes and fresh thyme and cook for 20 - 25 minutes.</li></b>
+                    <li>Take out the thyme springs.</li>
+                    <b><li>Stir in the lentils and bring back to a simmer.</li></b>
+                    <li>Serve with wild and white basmati rice, mash or quinoa.</li>
+                </ol>
+-->
+                <p class="p">1. Heat the oil in a large, heavy-based pan. <br><b>2. Add the onions and cook gently for 5 - 10 mins until softened.</b><br>3. Add garlic, spices, dried thyme, carrots, celery and peppers and cook for 5 minutes. <br><b>4. Add the tomatoes, stock, courgettes and fresh thyme and cook for 20 - 25 minutes.</b> <br>5. Take out the thyme springs. <br><b>6. Stir in the lentils and bring back to a simmer.</b><br>7. Serve with wild and white basmati rice, mash or quinoa.</p>
+                </div>
+            </div>
+            
+            <div class="col-sm-12 align-center">
+            <br><div class="contents">
+                <p class="comments">Comments</p>
+              </div>
+            </div>
+            
+            <div class="col-sm-8">
+            <form name="form" action="comment.php" onsubmit="return validateForm()" method="POST">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Name:*</label>
+                </div>
+                <div class="col-35">
+                  <input type="text" id="fname" name="name" >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">Email:*</label>
+                </div>
+                <div class="col-35">
+                  <input type="text" id="email" name="email" >
+                </div>
+              </div>
+             
+              <div class="row">
+                <div class="col-25">
+                  <label for="comment">Comment:*</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="comment" name="comments"  style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" class="sub" value="Submit">
+              </div>
+              </form>
+
+              
+
+            <script>
+            function validateForm() {
+                  var x = document.forms["form"]["name"].value;
+                  if (x == "") {
+                    alert("Name must be filled out");
+                    return false;
+                  }
+                
+                 var x = document.forms["form"]["email"].value;
+                  if (x == "") {
+                    alert("Email must be filled out");
+                    return false;
+                  }  
+                var email = $("#email").val();
+                if ((/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) { } else {
+                    alert("Please enter a valid email");
+                    return false;
+                }
+                
+                 var x = document.forms["form"]["comments"].value;
+                  if (x == "") {
+                    alert("Comment must be filled out");
+                    return false;
+                  }
+                }
+                
+//                document.getElementById("form").submit();
+            </script>
+            </div>
+            
+            <div class="col-sm-12">
+            <br><legend id="websites" class="contact-legend"></legend>
+            </div>
+            
+            <div class="col-sm-12">
+                <p><b>Lorem Name</b><br>lorem@ipsum.com<br><br>Present commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lancinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+            
+            <div class="col-sm-12">
+            <br><legend id="websites" class="contact-legend"></legend>
+            </div>
+            
+            <div class="col-sm-12">
+                <p><b>Lorem Name</b><br>lorem@ipsum.com<br><br>Sed accumsan elementum eleifend. Suspendisse trustue, nulla sed porttitor tincidant, nisl justo porta nulla, quis consequat lacus massa quis libero. Dones tempus pharetra velit eu dictum. Dones ullamcorper lorem id ante pretium id auctor arcu pretium. Sed viverra mi ut ligula pellentesque ultricies. Morbi feugiat sagittis lacus in fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam convallis molestie eros, vitae blandit nulla ornare vel. Sed elementum magna sit amet velit ullamcorper vestibulum.</p>
+            </div>
+           
+        </div><!-- end -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>

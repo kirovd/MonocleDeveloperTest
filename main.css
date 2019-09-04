@@ -1,0 +1,117 @@
+body{
+   font-family: 'Helvetica Neue' !important; 
+	src: url('HelveticaNeueBold.woff2') format('woff2'),
+		url('HelveticaNeueBold.woff') format('woff');
+	font-style: normal;
+}
+
+.navbar {
+    border-radius: 0px !important;
+}
+
+#logo{
+    color: white;
+    font-family: 'Helvetica Neue';
+    font-size: 25px;
+}
+
+.h3 {
+   font-family: 'Plantin Bold Condensed' !important;
+    color: #B31329 !important;
+    font-size: 25px;
+}
+
+
+
+
+.container-fluid .content {
+  bottom: -50px;
+  background: rgb(255, 186, 1); /* Fallback color */
+  background: rgb(255, 186, 1); /* #ffba01 background with 0.5 opacity */
+  color: rgba(0, 0, 0, 5);
+  width: 100%;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
+    font-family: 'Helvetica Neue' !important; 
+}
+
+
+.container-fluid .contents {
+
+  background: rgb(181, 183, 187); /* Fallback color */
+  background: rgb(181, 183, 187); /* #B5B7BB background */
+  color: rgba(0, 0, 0, 5);
+  width: 100%;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.comments {
+    font-family: 'Helvetica Neue';
+    font-size: 20px;   
+    padding-bottom: auto !important;
+}
+
+
+input[type=text], comment, textarea {
+  width: 100%;
+  padding: 1px;
+  resize: vertical;
+}
+
+
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  float: right;
+}
+
+.sub {
+    background-color: darkgray;
+}
+.container-fluid {
+  padding: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 20px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 20px;
+}
+
+.col-35 {
+  float: left;
+  width: 35%;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.contact-legend{
+    border-width: thin;
+    border-color: black;
+}
+
